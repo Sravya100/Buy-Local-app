@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy local shopping site</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src = "js/store.js" async></script>
+    <style>
+        form {border: 3px solid #f1f1f1;}
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        button {
+          background-color: #04AA6D;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+        }
+        
+        img.avatar {
+          width: 40%;
+          border-radius: 50%;
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+    input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+         } 
+
+    input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+    }
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.original{
+  text-decoration: line-through;
+  color: #999;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+
+ </style>
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">Buy Local<span>.</span></a>
+    
+
+    <nav class="navbar">
+      
+     
+        
+        <a href="#products">Products</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">--Select a category--</button>
+          <div class="dropdown-content">
+            <a href="#fruits">Fruits</a>
+            <a href="#vegetables">Vegetables</a>
+            <a href="#dairynuts">Dairy and nuts</a>
+          </div>
+        </div>
+      
+    </nav>
+
+    <div class="icons">
+      <a href="#home" class="fas fa-home"></a>
+      <a href="#contact" class="fas fa-phone"></a>
+        <a href="#cart" class="fas fa-shopping-cart"></a>
+        <a href="#login" class="fas fa-user"  ></a>
+        <!--<div class="dropdown">
+          <a href="#login" class="fas fa-user" class ="dropbtn" ></a>
+          <div class="dropdown-content">
+            <a href="#login">Login</a>
+            <a href="#signup">Sign up</a>
+          </div>
+        </div>-->
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Buy Local</h3>
+        <span> Farm to Home or Made here Grown Here</span>
+        <p> Shipping from modern farms close to where your home is. Purest produce possible harvested just minutes away before delivery.</p>
+        <a href="#products" class="btn">Shop now</a>
+    </div>
+    
+</section>
+
+<!-- home section ends -->
+
+<!-- login section starts -->
+
+<section class="login" id="login">
+  <h1 class="heading"> Welcome <span>user!</span> </h1>
+  
+<form action="/action_page.php" method="post" style="width:50%; height: max-content; float: left; padding: 10px; height: 500px;">
+  <h3 class="headings" id="fruits"> Login </h3>
+ <!--<div class="imgcontainer" style="width:50%;">
+    <img src="images/avatar.png" alt="Avatar" class="avatar">
+  </div> -->
+
+  <div class="container" >
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Email ID" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <p style="size:20px;">Forgot password? <a href="#contact"> Click here.</a></p>
+   <br>
+   <br>
+   <br>
+    
+   <div style="padding: 10px;"></div>
+  
+    <input type="checkbox" checked="checked" name="remember" style="font-size: large;"> Remember me </input>
+   <hr>
+   <div style="padding: 5px;"></div>
+
+    <button class="btn btn-primary" type="submit" onclick="alert('Welcome user!');"  >LOGIN</button>   
+
+    
+    </label>
+  </div>
+
+  <!--<div class="container" style="background-color:#f1f1f1">
+    <div class="container signin">
+      <p>Don't have an account? <a href="#signup">Register </a></p>
+    </div>-->
+   
+  </div>
+</form>
+
+<!--Sign up-->
+<form class="signup" id="signup" style="width:50%;float: right; padding: 10px; height: 500px;">
+  <h3 class="headings"> New user? </h3>
+  <div class="container">
+    
+    <!--<h4>Please fill in this form to create an account.</h4>-->
+   
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <br>
+    <hr>
+    <div style="padding: 5px;"></div>
+    <!--<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>-->
+    <button class="btn btn-primary" type="submit" onclick="return Validate()">REGISTER</button>   
+    
+  </div>
+  
+ <!-- <div class="container signin">
+    <p>Already have an account? <a href="#login">Sign in</a></p>
+  </div>-->
+</form>
+
+</section>
+
+
+<!-- login section ends -->
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- Sign up section starts 
+
+<section class="signup" id="signup">
+  <h1 class="heading"> <span>Sign </span>Up </h1>
+<form >
+    <div class="container">
+      
+      <h4>Please fill in this form to create an account.</h4>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter email" name="email" id="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+  
+      <label for="psw-repeat"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <button class="btn btn-primary" type="submit" onclick="return Validate()">Register</button>    
+    </div>
+    
+    <div class="container signin">
+      <p>Already have an account? <a href="#login">Sign in</a></p>
+    </div>
+  </form>
+</section>
+
+
+
+<script type="text/javascript">
+  function Validate() {
+      var password = document.getElementById("psw").value;
+      var confirmPassword = document.getElementById("psw-repeat").value;
+      if (password != confirmPassword) {
+          alert("Passwords do not match.");
+          return false;
+      }
+      else{
+        alert("Successfully registered!");
+        return true;
+      }
+      
+  }
+</script>
+
+
+
+Signup section ends --> 
+
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+  <h1 class="heading"> Product <span>catalog</span> </h1>
+  
+  <h3 class="headings" id="fruits"> Fruits </h3>
+
+  <div class="box-container">
+      <div class="box">
+      <span class="discount">-15%</span>
+      <div class = "image">
+                  <img class="shop-item-image" src="images/img-1.jpg">
+                      <div class="shop-item-title">Bananas</div>
+                      <div class = "original">$15.28</div> 
+                      <div class="shop-item-price">$12.99</div>
+                      <button class="btn btn-primary shop-item-button" type="button" onclick="alert('Item added to cart');">ADD TO CART</button>
+                      </div>
+                      </div>
+       <div class="box">
+        <span class="discount">-15%</span>
+          <div class = "image">
+                      <img class="shop-item-image" src="images/img-7.jpg">
+                          <div class="shop-item-title">Apples</div>
+                          <div class = "original">$15.28</div> 
+                          <div class="shop-item-price">$12.99</div>
+                          <button class="btn btn-primary shop-item-button" type="button" onclick="alert('Item added to cart');">ADD TO CART</button>
+                          </div>
+      </div>
+     
+      <div class="box"> 
+        <span class="discount">-15%</span>
+          <div class = "image">
+                      <img class="shop-item-image" src="images/img-5.jpg">
+                          <div class="shop-item-title">Berries</div>
+                          <div class = "original">$15.28</div> 
+                          <div class="shop-item-price">$12.99</div>
+                          <button class="btn btn-primary shop-item-button" type="button" onclick="alert('Item added to cart');">ADD TO CART</button>
+                      </div>
+      </div>
+
+      
+
+      <div class="box"> 
+        <span class="discount">-15%</span>
+          <div class = "image">
+                      <img class="shop-item-image" src="images/img-3.jpg">
+                          <div class="shop-item-title">Oranges</div>
+                          <div class = "original">$15.28</div> 
+                          <div class="shop-item-price">$12.99</div>
+                          <button class="btn btn-primary shop-item-button" type="button" onclick="alert('Item added to cart');">ADD TO CART</button>
+                          </div>
+      </div>
+      </div>
+      <h3 class="headings" id="vegetables"> Vegetables </h3>
+      <div class="box-container">
+      
+      <div class="box">
+        <span class="discount">-15%</span>
+        <div class = "image">
+                    <img class="shop-item-image" src="images/img-2.jpg">
+                        <div class="shop-item-title">Tomatoes</div>
+                        <div class = "original">$15.28</div> 
+                        <div class="shop-item-price">$12.99</div>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="alert('Item added to cart');">ADD TO CART</button>
+                        </div>
+    </div>
+      <div class="box">   
+        <span class="discount">-15%</span>
+          <div class = "image">
+                      <img class="shop-item-image" src="images/img-8.jpg">
+                          <div class="shop-item-title">Carrots</div>
+                          <div class = "original">$15.28</div> 
+                          <div class="shop-item-price">$12.99</div>
+                          <button class="btn btn-primary shop-item-button" type="button" onclick="alert('Item added to cart');">ADD TO CART</button>
+           </div>
+      </div>
+
+      </div>
+      <h3 class="headings" id="dairynuts"> Dairy and Nuts </h3>
+      <div class="box-container">
+      <div class="box"> 
+        <span class="discount">-15%</span>
+          <div class = "image">
+                      <img class="shop-item-image" src="images/img-6.jpg">
+                          <div class="shop-item-title">Nuts</div>
+                          <div class = "original">$15.28</div> 
+                          <div class="shop-item-price">$12.99</div>
+                          <button class="btn btn-primary shop-item-button" type="button" onclick="alert('Item added to cart');">ADD TO CART</button>
+                      </div>
+      </div>
+
+      <div class="box">  
+        <span class="discount">-15%</span>
+          <div class = "image">
+                      <img class="shop-item-image" src="images/img-4.jpg">
+                          <div class="shop-item-title">Milk</div>
+                          <div class = "original">$15.28</div> 
+                          <div class="shop-item-price">$12.99</div>
+                          <button class="btn btn-primary shop-item-button" type="button" onclick="alert('Item added to cart');">ADD TO CART</button>
+          </div>
+       </div>
+      
+
+  </div>
+
+</section>
+
+<!-- prodcuts section ends -->
+
+<!-- cart section starts -->
+<section class="cart" id="cart">
+  <h1 class="heading"> Cart </h1>
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column" style="font-size: 2em; ">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column" style="font-size: 2em;">QUANTITY</span>
+   </div>
+    <div class="cart-items">
+    
+    </div>
+    <div class="cart-row">
+        <span class="cart-total-title cart-item cart-headercart-column" style="font-size: large; flex-wrap: wrap; text-align: right;"><b>Total</b></span>
+        <span class="cart-total-price cart-item cart-headercart-column" style="font-size: large; flex-wrap: wrap; padding-left: 15px;" >$0.00</span>
+    </div> 
+    
+    <button class="btn btn-primary btn-purchase" type="button" >PURCHASE</button>
+  
+
+</section>
+<!-- cart section ends padding-left: 39% padding-left: 12px;-->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span> Contact </span> us </h1>
+
+    <div class="row">
+
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn" onclick="alert('Thank you for contacting us. We will get back to you!');">
+        </form>
+
+        <div class="image">
+            <img src="images/contact-img.jpg" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="#">home</a>
+            <!--a href="#">about</a-->
+            <a href="#products">products</a>
+            <!--a href="#">review</a-->
+            <a href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Extra links</h3>
+            <a href="#">my account</a>
+            <a href="#cart">my order</a>
+        </div>
+
+        <div class="box">
+            <h3>Locations</h3>
+            <a href="#">Fairfax</a>
+            <a href="#">Arlington</a>
+            <a href="#">Herndon</a>
+            <a href="#">Ashburn</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">buylocal@gmail.com</a>
+            <a href="#">FAIRFAX - 22030</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+        <div class="box">
+          <div class="icons">
+            <img src="images/icon-1.png" alt="">
+         <div class="info">  
+                <h3>Free delivery</h3>
+                <h4>on all orders</h4>
+            </div>
+        </div>
+        </div>
+
+      <div class="box">
+        <div class="icons">
+          <img src="images/icon-2.png" alt="">
+          <div class="info">
+              <h3>3 days returns</h3>
+              <h4>moneyback guarantee</h4>
+          </div>
+      </div>
+      </div>
+
+    <div class="box">
+      <div class="icons">
+        <img src="images/icon-3.png" alt="">
+        <div class="info">
+            <h3>Offers & gifts</h3>
+            <h4>on all orders</h4>
+        </div>
+    </div>
+  </div>
+
+        <div class="box">
+          <div class="icons">
+            <img src="images/icon-4.png" alt="">
+            <div class="info">
+                <h3>Secure payments</h3>
+                <h4>protected by paypal</h4>
+            </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+</section>
+
+<!-- footer section ends -->    
+</body>
+</html>
